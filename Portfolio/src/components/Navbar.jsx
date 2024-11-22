@@ -18,7 +18,7 @@ export default function Navbar() {
     ];
 
   return (
-    <div className='bg-yellow-50 text-black w-full fixed top-0 z-10'>
+    <div className='bg-yellow-50 text-black w-svw fixed top-0 z-10'>
         <div className='container mx-auto p-4 hidden md:flex justify-between items-center'>
             <div>
                 <img src={logo} alt="" className='w-20 h-12' />
@@ -35,11 +35,11 @@ export default function Navbar() {
         </div>
 
 
-        <div className='flex-w-full justify-between items-center md:hidden p-2 shadow-sm'>
+        <div className='flex justify-around items-center md:hidden p-2 shadow-sm'>
             <div>
                 <img src={logo} alt="" className='w-20 h-12' />
             </div>
-        <div className='flex justify-end items-center gap-2'>
+        <div className='flex justify-center items-center '>
             <div onClick={()=>setmenu(!menu)}>
                 {menu?(<IoClose size={30} className="text-black"/>):(<MdMenu size={30} className="text-black"/>)}
             </div>
