@@ -21,7 +21,7 @@ export default function Navbar() {
     <div className='bg-yellow-50 text-black w-svw fixed top-0 z-10'>
         <div className='container mx-auto p-4 hidden md:flex justify-between items-center'>
             <div>
-                <img src={logo} alt="" className='w-20 h-12' />
+               <a href="#home"><img src={logo} alt="" className='w-20 h-12' /></a>
             </div>
             <div className='hidden md:flex space-x-6 items-center list-none text-lg'>
                 {items.map(({id,text,to})=>(
