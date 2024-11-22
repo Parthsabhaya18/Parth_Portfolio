@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutImg from '../assets/aboutImg.png'
+import aboutImg from '../assets/aboutImg.jpg'
 import CV from '../assets/CV.pdf'
 import {FaRegHandshake,FaRegFolderOpen} from 'react-icons/fa'
 import { MdSupportAgent } from "react-icons/md";
@@ -10,7 +10,7 @@ export default function About() {
     <div id='about' className='py-16 bg-gray-50'>
     <div className='container mx-auto px-6 lg:px-14 flex flex-col md:flex-row items-center justify-between'>
         <div className='w-52 md:w-72 mb-8 md:mb-0 ml-0 md:ml-30'>
-            <img className='max-w-80 h-auto object-cover ' src={aboutImg} alt="About Me" />
+            <img className='max-w-96 h-72 object-cover rounded-e-xl ml-5 ' src={aboutImg} alt="About Me" />
         </div>
 {/* right section  */}
         <div className='w-full md:w-1/2 md:pl-12'>
