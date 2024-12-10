@@ -12,24 +12,24 @@ export default function Footer() {
                 <div className='space-y-3'>
                     <h3 className='font-medium text-gray-700'>EXPLORE</h3>
                     <ul className='text-gray-500 space-y-2'>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#Hero">Blog</a></li>
+                        <li><a className=' hover:text-blue-600 hover:font-[500] hover:border-b-[1.5px] border-gray-400' href="https://github.com/Parthsabhaya18" href="#">Support</a></li>
+                        <li><a className=' hover:text-blue-600 hover:font-[500] hover:border-b-[1.5px] border-gray-400' href="https://github.com/Parthsabhaya18" href="#about">About Us</a></li>
+                        <li><a className=' hover:text-blue-600 hover:font-[500] hover:border-b-[1.5px] border-gray-400' href="https://github.com/Parthsabhaya18" href="#Hero">Blog</a></li>
                     </ul>
                 </div>
                 <div className='space-y-3'>
                 <h3 className='font-medium text-gray-700'>LEGAL</h3>
                     <ul className='text-gray-500 space-y-2'>
-                        <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Private Policy</a></li>
+                        <li><a className=' hover:text-blue-600 hover:font-[500] hover:border-b-[1.5px] border-gray-400' href="https://github.com/Parthsabhaya18" href="#">Terms of Use</a></li>
+                        <li><a className=' hover:text-blue-600 hover:font-[500] hover:border-b-[1.5px] border-gray-400' href="https://github.com/Parthsabhaya18" href="#">Private Policy</a></li>
                     </ul>
                 </div>
                 <div className='space-y-3'>
                 <h3 className='font-medium text-gray-700'>SOCIAL</h3>
                     <ul className='text-gray-500 space-y-2 '>
-                        <li ><a href="https://github.com/Parthsabhaya18">GitHub</a></li>
-                        <li ><a href="https://www.linkedin.com/in/parth-sabhaya-a37836223/">Linkdin</a></li>
-                        <li ><a href="https://www.instagram.com/the_parthsabhaya/">Instagram</a></li>
+                        <li ><a className=' hover:text-blue-600 hover:font-[500] hover:border-b-[1.5px] border-gray-400' href="https://github.com/Parthsabhaya18">GitHub</a></li>
+                        <li ><a className=' hover:text-blue-600 hover:font-[500] hover:border-b-[1.5px] border-gray-400' href="https://www.linkedin.com/in/parth-sabhaya-a37836223/">Linkdin</a></li>
+                        <li ><a className=' hover:text-blue-600 hover:font-[500] hover:border-b-[1.5px] border-gray-400'  href="https://www.instagram.com/the_parthsabhaya/">Instagram</a></li>
                     </ul>
                 </div>
 
