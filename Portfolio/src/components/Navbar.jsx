@@ -18,7 +18,7 @@ export default function Navbar() {
     ];
 
   return (
-    <div className='bg-yellow-50 text-black w-svw fixed top-0 z-10'>
+    <div className='block bg-yellow-50 text-black w-svw fixed top-0 z-10'>
         <div className='container mx-auto p-4 hidden md:flex justify-between items-center'>
             <div>
                <a href="#home"><img src={logo} alt="" className='w-20 h-12' /></a>

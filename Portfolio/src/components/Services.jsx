@@ -80,7 +80,7 @@ export default function Services() {
       ];
     
   return (
-    <div id='services' className='bg-white py-16 px-8'>
+    <div id='services' className='block bg-white py-16 px-8'>
         <div className='container mx-auto mt-5 px-6 lg:px-24 text-center'>
             <div className='mb-12'>
             <h3 className='text-yellow-500 font-semibold text-lg uppercase mb-2'>Expertises</h3>

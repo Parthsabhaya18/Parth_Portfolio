@@ -5,7 +5,7 @@ import CV from '../assets/CV.pdf'
 
 export default function Hero() {
   return (
-    <div id='home' className='text-black flex flex-col-reverse md:flex-row justify-center items-center py-10 px-5 sm:px-10 lg:px-40 bg-gradient-to-t from-white to-yellow-50'>
+    <div id='home' className= 'block text-black flex flex-col-reverse md:flex-row justify-center items-center py-10 px-5 sm:px-10 lg:px-40 bg-gradient-to-t from-white to-yellow-50'>
         
             <div className='w-full md:w-1/2 mb-10 text-center md:text-left'>
                 <h3 className='text-base md:text-lg lg:text-xl mb-0 md:-mb-2 text-yellow-500'>Hello,I am </h3>

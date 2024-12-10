@@ -86,7 +86,7 @@ export default function Work() {
       {caseStudies.map((study, index) => (
         <div
           key={study.id}
-          className={`flex flex-col lg:flex-row items-center justify-between mb-16 lg:mb-24 ${
+          className={`block flex flex-col lg:flex-row items-center justify-between mb-16 lg:mb-24 ${
             index % 2 === 0 ? "lg:flex-row-reverse" : ""
           }`}
         >

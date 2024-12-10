@@ -7,7 +7,7 @@ import {BsDownload} from 'react-icons/bs'
 
 export default function About() {
   return (
-    <div id='about' className='py-16 bg-gray-50'>
+    <div id='about' className='block py-16 bg-gray-50 '>
     <div className='container mx-auto px-6 lg:px-14 flex flex-col md:flex-row items-center justify-between'>
         <div className='w-52 md:w-72 mb-8 md:mb-0 ml-0 md:ml-30'>
             <img className='w-full h-72 object-cover rounded-e-xl' src={aboutImg} alt="About Me" />
