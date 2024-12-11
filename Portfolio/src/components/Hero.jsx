@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <div id='home' className= 'block text-black flex flex-col-reverse md:flex-row justify-center items-center py-10 px-5 sm:px-10 lg:px-40 bg-gradient-to-t from-white to-yellow-50'>
         
-            <div className='w-full md:w-1/2 mb-10 text-center md:text-left'>
+            <div className='w-full -mt-28 md:mt-10 md:w-1/2 text-center md:text-left'>
                 <h3 className='text-base md:text-lg lg:text-xl mb-0 md:-mb-2 text-yellow-500'>Hello,I am </h3>
                 <h1 className='text-2xl md:text-4xl lg:text-6xl my-0 md:ml-1 font-bold py-2 md:py-2'>Parth Sabhaya</h1>
                 <h3 className='text-base md:text-xl lg:text-2xl text-green-600'>Web Developer</h3>
