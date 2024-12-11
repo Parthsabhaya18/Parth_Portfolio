@@ -17,8 +17,9 @@ export default function Navbar() {
         {id:5,text:"Contact",to:"contact"}
     ];
 
+
   return (
-    <div className='block bg-yellow-50 text-black w-svw fixed top-0 z-10'>
+    <div className=' bg-yellow-50 text-black w-svw fixed top-0 z-10'>
         <div className='container mx-auto p-4 hidden md:flex justify-between items-center'>
             <div>
                <a href="#home"><img src={logo} alt="" className='w-20 h-12' /></a>
@@ -50,12 +51,12 @@ export default function Navbar() {
                 <div className='md:hidden bg-yellow-50 py-6 justify-center items-center gap-2 text-lg text-black flex flex-col list-none shadow-sm'>
                     {items.map(({id,text,to})=>(
                     <li key={id} className='hover:text-yellow-500 duration-200 cursor-pointer border-b w-11/12'>
-                        <Link to={to} smooth={true} duration={500}>
+                        <Link to={to} smooth={true} duration={500} onClick={()=>{setmenu(false)}}>
                         {text}</Link>
                         </li>
                 ))}
                    <a href={CV} download="CV.pdf" className='text-lg bg-yellow-500 text-black px-4 py-2 mt-3 rounded hover:bg-yellow-400'>Download CV</a>
-        </div>
+                </div>
             )}
     
     </div>
