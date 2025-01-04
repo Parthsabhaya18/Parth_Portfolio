@@ -14,7 +14,7 @@ export default function About() {
         </div>
 {/* right section  */}
         <div className='w-full md:w-1/2 md:pl-12'>
-            <h2 className='text-4xl md:text-6xl font-bold text-gray-8000 mb-6'>About me</h2>
+            <h2 className='text-4xl md:text-6xl font-bold text-gray-8000 mb-6 mt-3'>About me</h2>
             <p className='text-gray-600 mb-6'>As a junior web developer, I am enthusiastic about utilizing my technical skills and passion for creating dynamic, user-friendly web applications. With a strong foundation in ReactJS, JavaScript and CSS. I am committed to developing responsive and efficient solutions. My skill set extends to backend technologies like NodeJS and database management with MongoDB and SQL, allowing me to contribute effectively to full-stack development. I am eager to continuously learn and adapt to the latest web development frameworks and technologies, ensuring I stay aligned with industry standards and innovations.</p>
 
             <div className='flex flex-wrap mb-6'>

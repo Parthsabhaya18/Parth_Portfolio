@@ -65,6 +65,18 @@ export default function Work() {
     defi: "The application is deployed and accessible at",
     navi: "https://digiwhiz-task.vercel.app/",
     },
+    {
+      id: 6,
+      title: "ict-infracon-task",
+      description:
+        "I developed a ict-infracon-task web application , using ReactJS for the frontend and tailwind css for responsive design. The app integrates all functionality animation and fully responsive",
+      workImage: digiwhiz,
+      details:
+      "Create a  web-page with the help of React js and tailwind css",
+    deployee: "Deployment:",
+    defi: "The application is deployed and accessible at",
+    navi: "https://ict-infracon-task.vercel.app/",
+    },
   ];
 
   const [details, setDetails] = useState(null);
