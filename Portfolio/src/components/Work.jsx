@@ -4,6 +4,7 @@ import work2 from "../assets/work2.png";
 import work3 from "../assets/work3.png";
 import youtube from "../assets/youtube.png";
 import digiwhiz from "../assets/digiwhiz.png";
+import ict from "../assets/ict.png";
 export default function Work() {
   const caseStudies = [
     {
@@ -70,7 +71,7 @@ export default function Work() {
       title: "ict-infracon-task",
       description:
         "I developed a ict-infracon-task web application , using ReactJS for the frontend and tailwind css for responsive design. The app integrates all functionality animation and fully responsive",
-      workImage: digiwhiz,
+      workImage: ict,
       details:
       "Create a  web-page with the help of React js and tailwind css",
     deployee: "Deployment:",
