@@ -107,7 +107,7 @@ export default function Footer() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="grid grid-cols-1 sm:grid-cols-3 gap-8 lg:w-2/3"
+            className="grid grid-cols-1 sm:grid-cols-3  gap-8 lg:w-2/3"
           >
             {footerItems.map((section, index) => (
               <div key={index} className="space-y-5">

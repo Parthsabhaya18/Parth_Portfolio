@@ -123,51 +123,17 @@ export default function Work() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 gap-24">
+        <div className="grid grid-cols-1 gap-12 lg:gap-24">
           {caseStudies.map((study, index) => (
             <motion.div
               key={study.id}
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="rounded-2xl overflow-hidden shadow-xl"
+              className="rounded-2xl overflow-hidden "
             >
               <div className={`flex flex-col lg:flex-row ${index % 2 === 0 ? 'lg:flex-row-reverse' : ''}`}>
-                <div className="lg:w-1/2">
-                  <div className="relative h-64 lg:h-full overflow-hidden">
-                    <img
-                      src={study.workImage}
-                      alt={study.title}
-                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                      <div className="flex space-x-4">
-                        {study.github && (
-                          <a
-                            href={study.github}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-colors"
-                          >
-                            <FiGithub className="text-xl" />
-                          </a>
-                        )}
-                        {study.live && (
-                          <a
-                            href={study.live}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-yellow-500 hover:bg-yellow-600 text-black p-3 rounded-full transition-colors"
-                          >
-                            <FiExternalLink className="text-xl" />
-                          </a>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="lg:w-1/2 p-8">
+                  <div className="order-1 lg:order-2 lg:w-1/2 p-6 md:p-8">
                   <div className="flex items-start mb-4">
                     <span className="text-3xl font-bold text-yellow-400 mr-4">{`0${index + 1}`}</span>
                     <div>
@@ -235,6 +201,41 @@ export default function Work() {
                     )}
                   </button>
                 </div>
+                <div className="order-2 lg:order-1 lg:w-1/2">
+                  <div className="relative h-64 lg:h-full overflow-hidden">
+                    <img
+                      src={study.workImage}
+                      alt={study.title}
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                      <div className="flex space-x-4">
+                        {study.github && (
+                          <a
+                            href={study.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-colors"
+                          >
+                            <FiGithub className="text-xl" />
+                          </a>
+                        )}
+                        {study.live && (
+                          <a
+                            href={study.live}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-yellow-500 hover:bg-yellow-600 text-black p-3 rounded-full transition-colors"
+                          >
+                            <FiExternalLink className="text-xl" />
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+               
               </div>
             </motion.div>
           ))}

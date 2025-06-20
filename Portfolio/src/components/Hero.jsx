@@ -45,7 +45,7 @@ export default function Hero() {
   return (
     <section 
       id='home'
-      className="min-h-screen relative overflow-hidden bg-gray-900 text-white flex items-center px-6  py-16 sm:px-12 lg:px-24"
+      className=" relative overflow-hidden bg-gray-900 text-white flex items-center px-6  py-16 sm:px-12 lg:px-24"
     >
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -54,7 +54,7 @@ export default function Hero() {
         <div className="absolute top-1/3 right-1/3 w-96 h-96 rounded-full bg-blue-500 opacity-5 blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto relative z-10 flex flex-col-reverse  lg:flex-row items-center justify-between gap-20 py-20">
+      <div className="container mx-auto relative z-10 flex flex-col-reverse  lg:flex-row items-center justify-between gap-20 py-10">
         {/* Content */}
         <motion.div 
           className="flex-1"

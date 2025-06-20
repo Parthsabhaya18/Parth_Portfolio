@@ -81,7 +81,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative py-20 px-4 md:px-12 lg:px-24 bg-gray-900 overflow-hidden"
+      className="relative py-10 md:py-20 px-4 md:px-12 lg:px-24 bg-gray-900 overflow-hidden"
     >
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden opacity-20">

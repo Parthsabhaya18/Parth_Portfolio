@@ -60,44 +60,53 @@ const iconComponents = {
 };
 
 
-  const SkillCard = ({ category, skills, icon }) => {
-    return (
-      <motion.div 
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-6 shadow-xl overflow-hidden"
-      >
-        <div className="absolute top-0 right-0 w-32 h-32 bg-[#ffffff10] rounded-full transform translate-x-16 -translate-y-16"></div>
-        <div className="relative z-10">
-          <div className="flex items-center mb-6">
-            <div className="p-3 rounded-full bg-[#ffffff10] mr-4">
-              {icon}
-            </div>
-            <h3 className="text-xl font-bold text-white">{category}</h3>
+const SkillCard = ({ category, skills, icon }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-6 md:p-8 shadow-xl overflow-hidden w-full"
+    >
+      {/* Decorative Background Circle */}
+      <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-[#ffffff10] rounded-full transform translate-x-10 -translate-y-10 md:translate-x-16 md:-translate-y-16"></div>
+
+      <div className="relative z-10">
+        {/* Header with Icon & Category */}
+        <div className="flex items-center mb-6">
+          <div className="p-2 md:p-3 rounded-full bg-[#ffffff10] mr-4">
+            {icon}
           </div>
-          <div className="grid grid-cols-2 gap-3">
-            {skills.map((skill) => (
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                key={skill.id}
-                className="flex items-center p-3 rounded-lg bg-[#ffffff05] border border-[#ffffff10] backdrop-blur-sm"
-                style={{ borderLeft: `3px solid ${skill.color}` }}
-              >
-                <div className="mr-3">
-                  {iconComponents[skill.icon]}
-                </div>
-                <span className="text-gray-300 font-medium">{skill.title}</span>
-              </motion.div>
-            ))}
-          </div>
+          <h3 className="text-lg md:text-xl font-bold text-white">{category}</h3>
         </div>
-      </motion.div>
-    );
-  };
+
+        {/* Skills Grid */}
+        <div className="grid grid-cols-1 min-[375px]:grid-cols-2 gap-3">
+
+  {skills.map((skill) => (
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      key={skill.id}
+      className="flex items-center p-3 rounded-lg bg-[#ffffff05] border border-[#ffffff10] backdrop-blur-sm transition-all"
+      style={{ borderLeft: `3px solid ${skill.color}` }}
+    >
+      <div className="mr-3">
+        {iconComponents[skill.icon]}
+      </div>
+      <span className="text-sm md:text-base text-gray-300 font-medium">
+        {skill.title}
+      </span>
+    </motion.div>
+  ))}
+</div>
+
+      </div>
+    </motion.div>
+  );
+};
 
   return (
-    <section id="services" className="relative py-20 bg-gray-900 overflow-hidden">
+    <section id="services" className="relative py-10 md:py-20 bg-gray-900 overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute top-0 left-0 w-full h-full opacity-20">
         <div className="absolute top-20 left-10 w-40 h-40 bg-purple-500 rounded-full filter blur-3xl opacity-30"></div>
@@ -127,7 +136,7 @@ const iconComponents = {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  gap-8">
           <SkillCard 
             category="Frontend" 
             skills={frontend} 

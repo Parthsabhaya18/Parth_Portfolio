@@ -62,7 +62,7 @@ export default function About() {
   ];
 
   return (
-    <section id='about' className='py-20 bg-gray-900 overflow-hidden'>
+    <section id='about' className=' bg-gray-900 py-10 md:py-20 overflow-hidden'>
       <div className='container mx-auto px-6 lg:px-14'>
         <motion.div 
           className='flex flex-col lg:flex-row items-center justify-between gap-12'
@@ -109,13 +109,13 @@ export default function About() {
 
             {/* Stats */}
             <motion.div 
-              className='grid grid-cols-2 md:grid-cols-3 gap-6 mb-12'
+              className='grid grid-cols-1 md:grid-cols-3 gap-6 mb-12'
               variants={item}
             >
               {stats.map((stat, index) => (
                 <motion.div 
                   key={index}
-                  className='bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-yellow-400 transition-all duration-300'
+                  className='bg-gray-800 p-6  rounded-xl border border-gray-700 hover:border-yellow-400 transition-all duration-300'
                   whileHover={{ y: -5 }}
                   variants={item}
                 >
@@ -132,7 +132,7 @@ export default function About() {
 
             {/* Buttons */}
             <motion.div 
-              className='flex flex-wrap gap-4'
+              className='flex flex-wrap justify-center gap-4'
               variants={item}
             >
               <motion.a
