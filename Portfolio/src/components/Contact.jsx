@@ -81,7 +81,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative py-10 md:py-20 px-4 md:px-12 lg:px-24 bg-gray-900 overflow-hidden"
+      className="relative py-10 md:py-20  bg-gray-900 overflow-hidden"
     >
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden opacity-20">
@@ -107,7 +107,7 @@ export default function Contact() {
         ))}
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="container mx-auto px-6 lg:px-14 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -162,7 +162,7 @@ export default function Contact() {
             className="flex-1"
           >
             <div className="bg-gray-800 rounded-xl shadow-2xl overflow-hidden border border-gray-700">
-              <div className="p-8">
+           <div className="p-4 sm:p-6 md:p-8">
                 <h3 className="text-2xl font-semibold text-white mb-6">Send Me a Message</h3>
                 <form ref={form} onSubmit={handleSubmit} className="space-y-6">
                   <motion.div whileHover={{ scale: 1.01 }}>

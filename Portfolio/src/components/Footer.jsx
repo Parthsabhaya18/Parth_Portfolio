@@ -77,12 +77,14 @@ export default function Footer() {
             viewport={{ once: true }}
             className="lg:w-1/3"
           >
-            <motion.h2 
-              whileHover={{ y: -3 }}
-              className="text-4xl mb-4 font-bold bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent"
-            >
-              Parth Sabhaya
-            </motion.h2>
+          <Link to="home" smooth={true} duration={500} offset={-60}>
+  <motion.h2 
+    whileHover={{ y: -3 }}
+    className="text-4xl mb-4 font-bold bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent cursor-pointer"
+  >
+    Parth Sabhaya
+  </motion.h2>
+</Link>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Full Stack Developer crafting immersive digital experiences with modern web technologies.
             </p>
@@ -125,6 +127,7 @@ export default function Footer() {
                         <Link
                           to={link.to}
                           smooth={true}
+                          offset={-60}
                           duration={500}
                           spy={true}
                           className="flex items-center gap-2 text-gray-400 hover:text-yellow-400 transition-colors group cursor-pointer"

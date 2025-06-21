@@ -113,7 +113,7 @@ const SkillCard = ({ category, skills, icon }) => {
         <div className="absolute bottom-20 right-10 w-60 h-60 bg-blue-500 rounded-full filter blur-3xl opacity-20"></div>
       </div>
       
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-6 lg:px-14 relative z-10">
         <motion.div
           ref={ref}
           variants={{

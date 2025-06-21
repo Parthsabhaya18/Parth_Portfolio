@@ -158,6 +158,7 @@ export default function Navbar() {
                                         to={to}
                                         smooth={true}
                                         duration={500}
+                                        offset={-60}
                                         spy={true}
                                         onSetActive={() => handleSetActive(to)}
                                         className={`relative px-1 py-2 text-sm font-medium cursor-pointer transition-all duration-300 ${
@@ -263,6 +264,7 @@ export default function Navbar() {
                                                 smooth={true}
                                                 duration={500}
                                                 spy={true}
+                                                offset={-60}
                                                 onSetActive={() => handleSetActive(to)}
                                                 onClick={() => setMenu(false)}
                                                 className={`block text-lg font-medium cursor-pointer py-2 transition duration-300 ${
