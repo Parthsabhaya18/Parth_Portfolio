@@ -54,7 +54,7 @@ export default function Hero() {
         <div className="absolute top-1/3 right-1/3 w-96 h-96 rounded-full bg-blue-500 opacity-5 blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto relative z-10 flex flex-col-reverse  lg:flex-row items-center justify-between gap-20 py-10">
+      <div className="container mx-auto relative z-10 flex flex-col-reverse  lg:flex-row items-center justify-between gap-20 py-10 md:py-16">
         {/* Content */}
         <motion.div 
           className="flex-1"
@@ -68,7 +68,7 @@ export default function Hero() {
             className="text-5xl sm:text-6xl md:text-7xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-yellow-500"
             variants={item}
           >
-            Parth Sabhaya.
+            Parth Sabhaya
           </motion.h1>
           
           <motion.h2 
